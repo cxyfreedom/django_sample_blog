@@ -1,0 +1,43 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/my_blog.css'%}">
+	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<title>CxyFreedom's BLOG</title>
+</head>
+<body>
+	<div class="page-header">
+		<h1><a href="">CxyFreedom's BLOG</a></h1>
+	</div>
+
+	<!-- <div>
+		<p>published: 2015.12.17, 14:45</p>
+		<h2><a href="">Hello Django</a></h2>
+		<p>First Article: Hello Django!</p>
+	</div>
+
+	<div>
+		<p>published: 2015.12.17, 14:45</p>
+		<h2><a href="">Test Blog</a></h2>
+		<p>TSM! TSM! TSM!</p>
+	</div>
+
+	<div>
+		{% for post in posts %}
+			{{ post }}
+		{% endfor %}
+	</div> -->
+
+	<div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
