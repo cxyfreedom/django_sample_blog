@@ -1,0 +1,5 @@
+*.pyc
+__pycache__
+django_env
+db.sqlite3
+.DS_Store
